@@ -1,9 +1,9 @@
-
 .row {
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 48px 46px;
-  margin: 50px 48px;
+  padding: 50px 40px;
+  margin: 0 auto;
 }
 
 @media (min-width: 488px) {

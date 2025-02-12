@@ -16,7 +16,7 @@
 .nav {
   margin-left: 23px;
 
-  &_link {
+  &__link {
     padding: 23px 0;
     display: flex;
     text-decoration: none;
@@ -29,14 +29,14 @@
     }
   }
 
-  &_items {
+  &__items {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  &_item {
+  &__item {
     margin-left: 20px;
 
     &:first-child {
@@ -54,10 +54,10 @@ img {
   margin-top: 10px;
 }
 
-.nav_link--is-active {
+.is-active {
   color: $blue-color;
   position: relative;
-  transition: color 300ms ease; 
+  transition: color 300ms ease;
 
   &::after {
     background-color: $blue-color;

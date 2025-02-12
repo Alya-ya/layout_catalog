@@ -1,8 +1,10 @@
 .stars {
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 15px;
   position: relative;
+  margin-left: 16px;
+  margin-right: 16px;
 
   &__list {
     display: flex;

@@ -2,23 +2,23 @@
   height: 408px;
 }
 
-
 .product-card__picture {
   width: 160px;
   height: 134px;
+  margin-top: 32px;
   margin-left: 19px;
-  margin-right: 19px;
 }
 
 .product-card {
-  padding: 50px 40px;
   box-sizing: border-box;
   border-radius: 5px;
   background-color: $secondary-color;
   border: 1px solid #f3f3f3;
-  transition: transform 300ms ease, color 300ms ease;
+  transition:
+    transform 300ms ease,
+    color 300ms ease;
 
-  &:hover{
+  &:hover {
     transform: scale(1.2);
   }
 
@@ -34,6 +34,8 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     margin-top: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
 
     &-code {
       display: inline-block;
@@ -48,6 +50,9 @@
       text-align: left;
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
+
+      margin-left: 16px;
+      margin-right: 16px;
     }
   }
 
@@ -55,10 +60,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: calc(100% - 32px);
     height: 40px;
     position: relative;
-    margin-top: 16px;
+    margin: 16px;
+
     border: 1px solid $primary-color;
 
     border-radius: 5px;
@@ -72,7 +78,9 @@
     line-height: 16px;
     text-align: center;
     text-decoration: none;
-    transition: background-color 300ms ease, color 300ms ease;
+    transition:
+      background-color 300ms ease,
+      color 300ms ease;
 
     &:hover {
       @include button-colors($secondary-color, $primary-color);
@@ -84,6 +92,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
 
   &__label {
     font-size: 12px;

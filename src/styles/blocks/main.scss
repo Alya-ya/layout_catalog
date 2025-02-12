@@ -1,53 +1,26 @@
-
-.product{
+.product {
   height: 408px;
-  margin-top: 50px;
-
-
-}
-.main__row-1,
-.main__row-2 {
-  display: grid;
-  grid-template-columns: repeat(minmax(200px, 1fr)(4, 1fr));
-  gap: 48px 46px;
-  margin: 50px 48px;
 }
 
 
-@media (min-width: 488px) {
-  .product {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 768px) {
-  .product {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .product {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-
-.card__picture{
+.product-card__picture {
   width: 160px;
   height: 134px;
   margin-left: 19px;
-  }
-
+  margin-right: 19px;
+}
 
 .product-card {
-
   padding: 50px 40px;
-
   box-sizing: border-box;
   border-radius: 5px;
   background-color: $secondary-color;
   border: 1px solid #f3f3f3;
+  transition: transform 300ms ease, color 300ms ease;
+
+  &:hover{
+    transform: scale(1.2);
+  }
 
   &__content {
     display: block;
@@ -99,6 +72,7 @@
     line-height: 16px;
     text-align: center;
     text-decoration: none;
+    transition: background-color 300ms ease, color 300ms ease;
 
     &:hover {
       @include button-colors($secondary-color, $primary-color);
@@ -134,4 +108,8 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
+}
+
+.product:hover .product-card__content {
+  color: #34568b;
 }

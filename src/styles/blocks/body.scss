@@ -10,3 +10,8 @@ body {
   flex-direction: column;
   color: $primary-color-text;
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+}

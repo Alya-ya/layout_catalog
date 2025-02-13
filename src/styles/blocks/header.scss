@@ -3,13 +3,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  position: sticky;
   font-size: 12px;
   font-weight: 500;
   box-shadow: 0 2px 4px 0 #0000000d;
 
   &__link {
     height: 60px;
+  }
+
+  &__logo {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    align-items: center;
+    margin-top: 10px;
   }
 }
 
@@ -43,15 +51,6 @@
       margin-left: 0;
     }
   }
-}
-
-img {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 0;
-  align-items: center;
-  margin-top: 10px;
 }
 
 .is-active {
